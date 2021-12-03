@@ -45,7 +45,7 @@ while True:
 
 str_ = input("Введите целое число для поиска в отсортированном списке: ")
 cfr_ = int_verify(str_)
-if not cfr_:
+if cfr_ == None:
     print("Число введено неверно!")
 if num_[0] >= cfr_ or num_[-1] < cfr_:
     print("Элемент не найден!")
